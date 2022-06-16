@@ -80,6 +80,8 @@ input {
   background: #06181c;
 
   width: 25vw;
+
+  color: var(--text-color);
 }
 
 main {
