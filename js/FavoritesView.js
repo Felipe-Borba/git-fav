@@ -92,13 +92,13 @@ export class FavoritesView extends Favorites {
           <span>@</span>
         </a>
       </td>
-      <td class="repositories">
+      <td class="repositories" width="20%">
         123
       </td>
-      <td class="followers">
+      <td class="followers" width="20%">
         1234
       </td>
-      <td>
+      <td width="10%">
         <button class="remove">Remover</button>
       </td>
     `;
