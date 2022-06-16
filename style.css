@@ -41,7 +41,7 @@ nav {
   gap: 8px;
 }
 
-button {
+nav button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -58,12 +58,12 @@ button {
   font-weight: 700;
 }
 
-button:hover {
+nav button:hover {
   color: #065e7c;
   background: white;
 }
 
-button:hover svg {
+nav button:hover svg {
   fill: #065e7c;
 }
 
@@ -102,6 +102,8 @@ table {
 
 table * {
   font-size: 2rem;
+
+  text-align: left;
 }
 
 table th {
@@ -121,5 +123,55 @@ table th {
   color: #4e5455;
 
   font-weight: 700;
-  font-size: 4.0rem;
+  font-size: 4rem;
+}
+
+table tr:nth-child(even) {
+  background: #06181c;
+}
+
+table tr:nth-child(odd) {
+  background: rgba(6, 22, 27, 0.5);
+}
+
+table td {
+  padding: 1.6rem 4.6rem;
+
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+td.user p {
+  font-weight: bold;
+}
+
+a {
+  font-weight: normal;
+}
+
+td .remove {
+  background: none;
+  border: none;
+
+  color: red;
+
+  cursor: pointer;
 }
