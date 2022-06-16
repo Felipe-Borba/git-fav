@@ -5,9 +5,80 @@
 }
 
 :root {
+  font-family: var(--ff-primary);
+  color: var(--text-color);
   font-size: 62.5%;
 
-  --ff-primary: 'Roboto', sans-serif;
-  --text-color: #E1E1E6;
+  --ff-primary: "Roboto", sans-serif;
+  --text-color: #e1e1e6;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body {
+  background: black;
+  margin: 12rem 16rem;
+  height: 74.4vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+
+  background: #065e7c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  padding: 1.2rem 3.2rem;
+
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+button:hover {
+  color: #065e7c;
+  background: white;
+}
+
+button:hover svg {
+  fill: #065e7c;
+}
+
+svg {
+  fill: white;
+}
+
+input {
+  padding: 1.6rem;
+
+  font-size: 1.6rem;
+  border-radius: 5px;
+  border: none;
+  background: #06181C;
+
+  width: 46.2rem;
+}
